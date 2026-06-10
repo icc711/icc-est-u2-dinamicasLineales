@@ -5,10 +5,16 @@ import java.util.Queue;
  
 public class App {
     public static void main(String[] args) throws Exception {
-        // runLinkList();
-        // runQueue();
+        runLinkList();
+ 
+        runQueue();
  
         runStack();
+ 
+        Ejercicio1 ejercicio1 = new Ejercicio1();
+        String texto = "COMPUTACION";
+        String textoInvertido = ejercicio1.invertString(texto);
+        System.out.println(textoInvertido);
     }
  
     private static void runStack() {
@@ -82,4 +88,6 @@ public class App {
         System.err.println(nombres.size()); // 4
  
     }
+ 
+}
 }
